@@ -70,3 +70,40 @@ function area(length, height) {
 
 area(5, 10);
 
+function greet(person1, person2, person3, person4) {
+    console.log("Hej, " + person1 + "!");
+    console.log("Hej, " + person2 + "!");
+    console.log("Hej, " + person3 + "!");
+    console.log("Hej, " + person4 + "!");
+}
+
+console.log(greet("Dennis", "Emelie", "Seth", "Sixten"));
+
+/*
+***************************************
+functions - return
+***************************************
+*/
+
+// Tänk er att en funktion är som en maskin
+// funktionen tar några inputs (argument)
+// Dessa argument används sedan inuti funktionen på något sätt -
+// Kanske matematiska beräkningar - kollar om värdet stämmer överens
+// Sedan returnerar funktionen ett värde, någon sorts output
+// Detta kallas för return a value - Returnerar ett värde
+// Man kan alltså fånga upp värdet som funktionen ger
+// Och vidare i sin kod använda värdet av den funktionen för att använda
+// På något annat sätt, exempelvis i en annan funktion
+
+function squared(x) {
+    return x * x;
+}
+
+console.log("4 squared is: " + squared(4));
+
+// return kan endast returnera ett värde per funktion
+// Om man har två stycken rader med return, så kommer funktionen enbart att
+// returnera den första return som den stöter på
+
+var result = squared(10);
+console.log(result);
