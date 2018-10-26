@@ -69,3 +69,4 @@ function area(length, height) {
 }
 
 area(5, 10);
+
