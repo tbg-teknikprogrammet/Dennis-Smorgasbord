@@ -99,6 +99,79 @@ for(var i = 0; i < cars.length; i++) {
 
 /*
 ***************************************
-Arrays - iteration - forEach
+Arrays - iteration - forEach : Visit https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
 ***************************************
 */
+
+// JavaScript provides an easy built-in way of iteratin over an array: forEach, a method used on arrays and is a part of the array prototype
+// Concept: yourArray.forEach(aFunction); Most often written with an anonymous function
+// forEach is more common to use when iterating an array
+
+var countries = ["Sweden", "Norway", "Finland", "Denmark", "Island"];
+countries.forEach(function(country) {
+    console.log(country); // the argument, country, holds each value in the array and loops through every single one 
+});
+
+function countryList(country) {
+    console.log("**************");
+    console.log(country);
+    console.log("**************");
+    console.log("");
+}
+
+countries.forEach(countryList);
+
+// Skillnaden mellan en for loop och forEach method är att i for-loopen hanterar vi ett nummer medan forEach är en inbyggd metod för
+// en array, vilket loopar igenom varje värde i den specifika arrayen
+// Om det vi vill loopa igenom _inte_ är en array, så fungerar alltså inte forEach
+
+/*
+***************************************
+Arrays - iteration - forEach: muntlig övning
+***************************************
+*/
+
+var number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var color = ["red", "green", "blue", "orange"];
+
+number.forEach(function(color) { // color is not a good argument since we're not dealing with colors here
+    if(color % 3 === 0) {
+        console.log("Inside the forEach method: " + color);
+    }
+});
+
+// Testa att skriva en for loop för detta istället
+for(var i = 0; i < number.length; i++) {
+    if(number[i] % 3 === 0) {
+        console.log("Inside the for loop: " + number[i]);
+    }
+}
+
+/*
+***************************************
+Arrays - Skriftlig övning
+***************************************
+*/
+
+// Write a function printReverse() that takes an array
+// as an argument and prints out the elements in the array 
+// in reverse order (don't actually reverse the array itself)
+
+function printReverse(myArr) {
+    for(var i = myArr.length -1; i >= 0; i--) {
+        console.log(myArr[i]);
+    }
+    // console.log(myArr.reverse());
+}
+
+printReverse([1,2,3,4,5,6]);
+
+// Write a function isIdentical() which takes an array as an argument
+// and returns true if all elements in the array are identical
+
+function isIdentical(array) {
+    var first = ???;
+}
+
+console.log(isIdentical([1,1,1,1,1])); // true
+console.log(isIdentical([1,1,1,2,2])); // false
