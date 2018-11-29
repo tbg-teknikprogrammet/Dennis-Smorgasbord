@@ -7,3 +7,5 @@ Mitt namn är Dennis och jag studerar på Teknikprogrammet i Lycksele
 * Lära mig JavaScript
 * while()
 * for()
+
+![Uppgift ToDo](projects\ToDo\todo.JPG "ToDo application")
