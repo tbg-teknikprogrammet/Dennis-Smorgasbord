@@ -170,8 +170,23 @@ printReverse([1,2,3,4,5,6]);
 // and returns true if all elements in the array are identical
 
 function isIdentical(array) {
-    var first = ???;
+    var first = array[0];
 }
+
+var first;
+const second;
+let third;
 
 console.log(isIdentical([1,1,1,1,1])); // true
 console.log(isIdentical([1,1,1,2,2])); // false
+
+// Write a function sumArray() that accepts an array of numbers and 
+// returns the sum of all numbers in the array
+
+
+[1,5,123,4,2,1]; // skriv ut summan av dessa tal/positioner i listan
+
+// Write a function max() that accepts an array of numbers and returns the 
+// maximum number in the array
+
+
