@@ -8,4 +8,5 @@ Mitt namn är Dennis och jag studerar på Teknikprogrammet i Lycksele
 * while()
 * for()
 
-![Uppgift ToDo](projects\ToDo\todo.JPG "ToDo application")
+![todo](https://user-images.githubusercontent.com/4288113/49279887-fea8b900-f488-11e8-9199-56e13ea54166.JPG)
+
