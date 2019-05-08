@@ -1,5 +1,26 @@
 @charset "utf-8";
 
 body {
-    background: #fff;
+    background: #34495e;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    padding: 20px 0px 0px 50px;
+}
+
+.some-class {
+    color: orange;
+    letter-spacing: 2px;
+    transform: rotate(180deg);
+    font-style: italic;
+}
+
+.another-class {
+    color: purple;
+    letter-spacing: 1px;
+    transform: skew(110deg);
+    font-style: italic;
+}
+
+.toggleBg {
+    background: #663399;
 }
